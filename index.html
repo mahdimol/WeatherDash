@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./public/css/styles.css" />
+    <!-- Fontawesome 6.0.0 -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+      integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==
+      "
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- Google Fonts -->
+    <!-- Poppins Font family -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="bg-card">
+      <div class="bg">
+        <div class="bg-linear"></div>
+        <div class="bg-circle"></div>
+      </div>
+    </div>
+    <main class="content">
+      <div class="header">
+        <a href="https://sabzlearn.ir" class="logo" target="_blank"
+          >sabzlearn.ir</a
+        >
+        <div class="search-card">
+          <input type="text" placeholder="Search a city..." />
+          <button id="searchBtn" class="icon">
+            <!-- Search icon -->
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </button>
+        </div>
+        <div class="pl-20"></div>
+      </div>
+      <div class="body">
+        <h1>
+          Hows's the weather today <br />in
+          <span class="city-name">Tabriz</span>?
+        </h1>
+        <div class="todays-weather-card">
+          <p class="temp">20</p>
+          <div class="todays-weather-data">
+            <p class="weather-status">Cloudy</p>
+            <!-- A Description, Data Auto Update-->
+            <p class="weather-status_cap">
+              Will get sunnier as the day progresses
+            </p>
+          </div>
+        </div>
+
+        <div class="datas-container">
+          <article class="data-card">
+            <span class="data-card_icon">
+              <!-- Humidity icon -->
+              <i class="fa-solid fa-droplet"></i>
+            </span>
+            <p class="data-card_title">
+                Humidity
+            </p>
+            <p class="data-card_value humidity">
+                24%
+            </p>
+          </article>
+          <article class="data-card">
+            <span class="data-card_icon">
+              <!-- Wind icon -->
+              <i class="fas fa-wind"></i>
+            </span>
+            <p class="data-card_title">
+                Wind
+            </p>
+            <p class="data-card_value wind">
+                24%
+            </p>
+          </article>
+          <article class="data-card">
+            <span class="data-card_icon">
+              <!-- Temp up icon -->
+               <i class="fas fa-temperature-high"></i>
+            </span>
+            <p class="data-card_title">
+                Pressure
+            </p>
+            <p class="data-card_value pressure">
+                24%
+            </p>
+          </article>
+
+        </div>
+      </div>
+    </main>
+
+    <script src="./js/app.js"></script>
+  </body>
+</html>

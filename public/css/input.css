@@ -1,0 +1,115 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@tailwind variants;
+
+@font-face {
+  font-family: "Sans-Regular";
+  src: url(../fonts/Sans-Regular.ttf);
+}
+
+@font-face {
+  font-family: "Sans-Medium";
+  src: url(../fonts/Sans-Medium.ttf);
+}
+
+@font-face {
+  font-family: "Sans-DemiBold";
+  src: url(../fonts/Sans-DemiBold.ttf);
+}
+
+@font-face {
+  font-family: "Sans-Bold";
+  src: url(../fonts/Sans-Bold.ttf);
+}
+
+.bg {
+  @apply absolute top-0 z-[-2] h-screen w-screen bg-white bg-[radial-gradient(100%_50%_at_50%_0%,rgba(0,163,255,0.13)_0,rgba(0,163,255,0)_50%,rgba(0,163,255,0)_100%)];
+}
+
+.bg-linear {
+  @apply absolute inset-0 -z-10 h-full w-full bg-white bg-[linear-gradient(to_right,#8080800a_1px,transparent_1px),linear-gradient(to_bottom,#8080800a_1px,transparent_1px)] bg-[size:14px_24px];
+}
+
+.bg-circle {
+  @apply absolute left-0 right-0 top-0 -z-10 m-auto h-[310px] w-[310px] rounded-full bg-fuchsia-400 opacity-20 blur-[100px];
+}
+
+.bg-card {
+  @apply fixed top-0 right-0 w-full h-screen;
+}
+
+.content {
+  @apply text-zinc-900 container z-10 relative p-10;
+}
+
+body {
+  @apply font-["Poppins"] [font-weight:_300];
+}
+
+.logo {
+  @apply text-xl text-zinc-900 font-black;
+}
+
+.header {
+  @apply flex items-center justify-between;
+}
+
+.search-card {
+  @apply w-[360px] flex focus-within:ring-4 duration-150 items-center overflow-hidden h-10 rounded-xl border ring-indigo-500/50 shadow-md relative bg-white;
+
+  input {
+    @apply absolute w-full h-full px-4 outline-none;
+  }
+
+  .icon {
+    @apply absolute right-4 text-zinc-500;
+  }
+}
+
+.body {
+  @apply flex items-center justify-center flex-col gap-5 mt-20;
+}
+
+h1 {
+  @apply text-5xl text-center leading-[52px] font-medium;
+}
+
+.todays-weather-card {
+  @apply mt-10 px-8 border border-zinc-100 flex items-center justify-between gap-4 bg-white w-[500px] p-4 shadow-md rounded-2xl shadow-zinc-100;
+}
+
+.temp {
+  @apply text-5xl relative min-w-max after:content-["\2103"] after:font-sans max-w-max after:absolute after:top-0 after:-right-6 after:text-xl after:text-zinc-500;
+}
+
+.todays-weather-data {
+  @apply bg-zinc-50 shadow-inner w-[75%] p-3 rounded-md;
+}
+
+.weather-status {
+  @apply text-2xl font-light;
+}
+
+.weather-status_cap {
+  @apply text-sm mt-2 text-zinc-600;
+}
+
+.datas-container {
+  @apply mt-10 grid grid-cols-3 items-center bg-white p-5 justify-center gap-3 min-w-[420px] shadow rounded-2xl;
+}
+
+.data-card {
+  @apply bg-zinc-50 to-white w-full min-h-[180px] rounded-2xl flex items-center justify-center flex-col gap-3;
+}
+
+.data-card_icon {
+  @apply text-3xl size-14 rounded-full shadow-inner shadow-zinc-500/20 flex items-center justify-center bg-white text-sky-500;
+}
+
+.data-card_title {
+  @apply text-zinc-700
+}
+.data-card_value {
+  @apply text-2xl font-light
+}
